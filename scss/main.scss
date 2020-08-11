@@ -1,0 +1,401 @@
+@import "_vars";
+@import "_fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  color: $blue;
+}
+
+// HEADER
+
+.header {
+  background: url("../img/bg.jpg") no-repeat center top / cover;
+  height: 100vh;
+  position: relative;
+  .wrap {
+    max-width: 1140px;
+    margin: auto;
+  }
+  &__nav {
+    width: 100%;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__nav-conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav_logo {
+    display: flex;
+    align-items: center;
+    margin-top: 0.4rem;
+  }
+  .logo-text {
+    &_1 {
+      font-family: $PFDinTextCondPro;
+      font-size: 25px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: $blue;
+    }
+    &_2 {
+      font-family: $PFDinTextCondPro;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $green;
+    }
+  }
+  .navig {
+    display: flex;
+    align-items: center;
+    .menu {
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 23px;
+        a {
+          font-family: $latoBold;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $blue;
+        }
+      }
+    }
+  }
+  .btn {
+    width: 210px;
+    height: 32px;
+    border: 1px solid $blue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    a {
+      font-family: $latoRegular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: $blue;
+    }
+  }
+  .header__title {
+    position: absolute;
+    width: 100%;
+    height: 81vh;
+    top: 4.5rem;
+    background: linear-gradient(
+      87.68deg,
+      rgba(255, 255, 255, 0) 7.73%,
+      rgba(255, 255, 255, 0.9) 55.76%
+    );
+    padding-top: 64px;
+    .subtitle {
+      font-family: $latoRegular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      text-align: right;
+      text-transform: uppercase;
+      color: $blue;
+    }
+    .title {
+      font-family: $PFDinTextCondPro;
+      font-size: 50px;
+      line-height: 55px;
+      text-align: right;
+      color: $black;
+      margin-bottom: 64px;
+    }
+    .btn-clinic {
+      width: 210px;
+      height: 32px;
+      background: $blue;
+      border: 1px solid $blue;
+      box-sizing: border-box;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      a {
+        font-family: $latoRegular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+  }
+}
+
+// CONTACT
+
+.contact {
+  width: 100%;
+  height: 72px;
+  background: $blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .wrap {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .adress {
+      font-family: $KarlaRegular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 72px;
+      color: $white;
+    }
+    .contact__phone {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      position: relative;
+      a {
+        line-height: 16px;
+      }
+      &::after {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 0px;
+        border: 2px solid $white;
+        transform: rotate(90deg);
+        position: absolute;
+        left: -14rem;
+        top: 23px;
+      }
+      &::before {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 0px;
+        border: 2px solid $white;
+        transform: rotate(90deg);
+        position: absolute;
+        left: 16rem;
+        top: 23px;
+      }
+    }
+  }
+}
+
+// COMPLEX
+
+.complex {
+  padding-top: 46px;
+  padding-bottom: 81px;
+  .wrap {
+    max-width: 1140px;
+    margin: auto;
+    .complex__keys {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      p {
+        font-family: $latoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $grey;
+      }
+      h2 {
+        font-family: $latoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        color: $black;
+        margin: 8px 0 11px 0;
+      }
+      .star {
+        width: 150px;
+        position: relative;
+        margin: auto;
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 12px;
+          width: 50px;
+          height: 0px;
+          border: 1px solid $blue;
+        }
+        &::before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 12px;
+          right: 0;
+          width: 50px;
+          height: 0px;
+          border: 1px solid $blue;
+        }
+      }
+    }
+    .keyAreas {
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      text-align: center;
+      align-items: baseline;
+      position: relative;
+      margin: auto;
+      cursor: pointer;
+      .keyAreas-text {
+        font-family: $latoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+        margin-top: 31px;
+      }
+      .massage {
+        &::after {
+          position: absolute;
+          left: 16%;
+          bottom: 50px;
+          display: block;
+          content: "";
+          width: 144px;
+          height: 0px;
+          border: 1px solid $blue;
+          transform: rotate(90deg);
+        }
+        &::before {
+          position: absolute;
+          right: 20%;
+          bottom: 50px;
+          display: block;
+          content: "";
+          width: 144px;
+          height: 0px;
+          border: 1px solid $blue;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+// DETAILS
+
+.block-details {
+  position: relative;
+  .wrap-det {
+    width: 100%;
+    margin: auto;
+    .details {
+      background: #f6f6f6;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: space-between;
+      padding: 37px 120px 47px 120px;
+      .description {
+        width: 420px;
+        margin-top: 134px;
+        h3 {
+          font-family: $latoBold;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: $black;
+        }
+        p {
+          font-family: $PFDinTextCondPro;
+          font-size: 14px;
+          line-height: 14px;
+          color: $black;
+          margin: 34px 0;
+          line-height: 1.2em;
+        }
+        .btn-detail {
+          width: 220px;
+          height: 44px;
+          border: 1px solid $blue;
+          box-sizing: border-box;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          a {
+            font-family: $latoRegular;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            color: $blue;
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .arrow {
+        position: absolute;
+        top: 0;
+        left: 30%;
+      }
+      .arrow::before,
+      .arrow::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        bottom: -43px;
+        border: 20px solid transparent;
+        border-top: 25px solid $white;
+      }
+      .arrow::after {
+        border-top: 10px solid $white;
+        bottom: -19px;
+      }
+    }
+    .details_2 {
+      display: none;
+      .arrow {
+        left: 48%;
+      }
+    }
+    .details_3 {
+      display: none;
+      .arrow {
+        left: 67%;
+      }
+    }
+  }
+}
+
+@import "_media";

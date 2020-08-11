@@ -1,0 +1,135 @@
+@media screen and (max-width: 1150px) {
+  .header .wrap,
+  .contact .wrap {
+    padding: 0 2rem;
+  }
+  .header .header__nav .header__title {
+    height: 81vh;
+  }
+  .block-details .wrap-det .details .description {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .block-details .wrap-det .details .description {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 907px) {
+  .header .navig {
+    .menu {
+      flex-direction: column;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .header .header__nav {
+    height: 160px;
+    .header__title {
+      height: 69vh;
+      top: 10rem;
+    }
+  }
+  .contact .wrap .contact__phone::before {
+    left: 11rem;
+  }
+  .contact .wrap .contact__phone::after {
+    left: -8rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header .header__nav-conteiner {
+    flex-direction: column;
+    .header__nav_logo,
+    .navig {
+      justify-content: center;
+    }
+    .menu {
+      flex-direction: row;
+      li {
+        margin: 20px 20px;
+      }
+    }
+  }
+  .contact .wrap .contact__phone::after,
+  .contact .wrap .contact__phone::before,
+  .complex .wrap .keyAreas .massage::before,
+  .complex .wrap .keyAreas .massage::after {
+    display: none;
+  }
+  .block-details .wrap-det .details {
+    flex-direction: column;
+    padding: 2rem;
+    .description {
+      width: 100%;
+      margin-bottom: 1rem;
+      h3 {
+        text-align: center;
+      }
+      .btn-detail {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    height: 100%;
+    .wrap {
+      flex-direction: column;
+      .contact__adress,
+      .contact__mail {
+        text-align: center;
+      }
+      .contact__phone {
+        flex-direction: row;
+        a {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+  .complex .wrap .keyAreas {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .contact .wrap .contact__phone {
+    flex-direction: column;
+    a {
+      margin: 0.2rem 0;
+    }
+  }
+  .header .header__nav {
+    height: 30%;
+    .header__title {
+      top: 13rem;
+      height: 62vh;
+    }
+  }
+  .header .header__nav-conteiner .menu {
+    flex-direction: column;
+    li {
+      margin: 0.3rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .complex .wrap .keyAreas {
+    flex-direction: column;
+    align-items: center;
+    .massage {
+      margin: 1rem 0;
+    }
+    .keyAreas-text {
+      margin-top: 0.5rem;
+    }
+  }
+}
